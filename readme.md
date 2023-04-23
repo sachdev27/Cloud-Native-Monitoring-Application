@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://user-images.githubusercontent.com/54627871/233833138-fe8aec5a-4909-4769-bab4-0d9d106c9fe8.png" alt="Project logo"></a>
+ <img width=700px height=500px src="https://user-images.githubusercontent.com/54627871/233833138-fe8aec5a-4909-4769-bab4-0d9d106c9fe8.png" alt="Project logo"></a>
 </p>
 
 <h2 align="center">Python Monitoring Application using Flask and Docker on EKS</h2>
