@@ -1,5 +1,5 @@
 import psutil
-from flask import Flask
+from flask import *
 
 
 app = Flask(__name__)
@@ -9,11 +9,10 @@ app = Flask(__name__)
 def index():
     MemoryUsgae = psutil.virtual_memory().percent
     CPUUsage = psutil.cpu_percent()
-    
+    Message = ""
     if MemoryUsgae > 80 or CPUUsage > 80:
-        return f"Server is overloaded with Memory Usage {MemoryUsgae}% and CPU Usage {CPUUsage}%"
-
-    return f"Server is running with Memory Usage {MemoryUsgae}% and CPU Usage {CPUUsage}%"
+        Message = f"Server is overloaded with Memory Usage {MemoryUsgae}% and CPU Usage {CPUUsage}%"
+    return render_template('index.html',cpu_metric=CPUUsage,mem_metric=MemoryUsgae,message=Message)
 
 
 

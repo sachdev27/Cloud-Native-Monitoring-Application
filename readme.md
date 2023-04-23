@@ -1,17 +1,56 @@
-# README: Python Monitoring Application using Flask and Docker on EKS
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="#" alt="Project logo"></a>
+</p>
 
-This README will guide you through creating a Python monitoring application using Flask and Docker, containerizing it, and deploying it to EKS cluster. We will cover the following steps:
+<h2 align="center">Python Monitoring Application using Flask and Docker on EKS</h2>
 
-How to create Python Monitoring Application using Flask from scratch.
-How to run the Python application locally on port 5000
-How to containerize the application using Docker
-How to write Dockerfile
-How to build Docker image from Dockerfile
-How to run Docker container from Docker image
-How to create ECR and push image to the Repo
-How to create EKS cluster and nodes
-How to create Kubernetes Deployments and service using Python
-How to port forward and expose the Kubernetes application
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+This repository will guide you through creating a Python monitoring application using Flask and Docker, containerizing it, and deploying it to EKS cluster. 
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+#### Steps to create Python Monitoring Application using Flask and Docker on EKS:
+
+<ol>
+  <li>How to create Python Monitoring Application using Flask from scratch.</li>
+  <li>How to run the Python application locally on port 5000</li>
+  <li>How to containerize the application using Docker</li>
+  <li>How to write Dockerfile</li>
+  <li>How to build Docker image from Dockerfile</li>
+  <li>How to run Docker container from Docker image</li>
+  <li>How to create ECR and push image to the Repo</li>
+  <li>How to create EKS cluster and nodes</li>
+  <li>How to create Kubernetes Deployments and service using Python</li>
+  <li>How to port forward and expose the Kubernetes application</li>
+</ol>
+
 
 ## Step 1: Creating Python Monitoring Application using Flask
 
@@ -119,3 +158,17 @@ spec:
 ```
 
 >This will create an ingress resource that routes traffic to your service based on the specified rules.
+
+
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [Docker](https://www.docker.com/) - Containerization
+- [Kubernetes](https://kubernetes.io/) - Orchestration
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Server Framework
+- [Python](https://www.python.org/) - Server Language
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [N4si](https://github.com/N4si) - Idea & Initial work
+
