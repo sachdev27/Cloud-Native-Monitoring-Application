@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="#" alt="Project logo"></a>
+ <img width=200px height=200px src="https://user-images.githubusercontent.com/54627871/233831827-d5fd348e-9736-4487-80ee-bd4dd3fb98c9.png" alt="Project logo"></a>
 </p>
 
 <h2 align="center">Python Monitoring Application using Flask and Docker on EKS</h2>
@@ -19,18 +19,9 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 About 
 
 This repository will guide you through creating a Python monitoring application using Flask and Docker, containerizing it, and deploying it to EKS cluster. 
 
