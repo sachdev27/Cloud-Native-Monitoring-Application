@@ -21,7 +21,7 @@ To create a Python monitoring application using Flask, you need to have Python a
 
 To run the Python application locally on port 5000, you need to navigate to the root directory of your Flask application and execute the following command:
 
-'python app.py'
+'python3 app.py'
 
 This will start your Flask application on port 5000, and you can access it using your web browser.
 
