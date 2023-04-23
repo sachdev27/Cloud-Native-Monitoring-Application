@@ -105,15 +105,30 @@ To create Kubernetes Deployments and service using Python, you need to have kube
 from kubernetes import client, config
 
 config.load_kube_config()
-api = client.CoreV1Api()
+api_client = client.ApiClient()
 
-# Create a deployment
-deployment = client.V1Deployment(...)
-api.create_namespaced_deployment(namespace="default", body=deployment)
+# Create the deployment
+api_instance = client.AppsV1Api(api_client)
+api_instance.create_namespaced_deployment(
+    namespace="default",
+    body=deployment
+)
 
-# Create a service
-service = client.V1Service(...)
-api.create_namespaced_service(namespace="default", body=service)
+# Define the service
+service = client.V1Service(
+    metadata=client.V1ObjectMeta(name="my-flask-service"),
+    spec=client.V1ServiceSpec(
+        selector={"app": "my-flask-app"},
+        ports=[client.V1ServicePort(port=5000)]
+    )
+)
+
+# Create the service
+api_instance = client.CoreV1Api(api_client)
+api_instance.create_namespaced_service(
+    namespace="default",
+    body=service
+)
 
 ```
 
